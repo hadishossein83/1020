@@ -1,38 +1,19 @@
-
 #include<iostream>
 using namespace std;
-int m(int a,int b,char c){
-    switch(c)
-    {
-        case '+':
-        return a+b;
-        break;
-        
-        case '-':
-        return a-b;
-        break;
-        
-        case '/':
-        return a/b;
-        break;
-        
-        case '*':
-        return a*b;
-        break;
-        default:
-        return 0;
+int f(int a){
+    if(a<10){
+        return a;
+    }
+    else{
+     cout<<a%10;
+     return f(a/10);
     }
 }
-
 int main()
 {
-    int i,j,z;
-    char k;
-    cout<<"enter two num"<<endl;
-    cin>>i>>j;
-    cout<<"choose / + * -";
-    cin>>k;
-    z=m( i,j,k);
-    cout<<z;
+    int i;
+    cout<<"enter a num";
+    cin>>i;
+    cout<<f(i);
     return 0;
 }
