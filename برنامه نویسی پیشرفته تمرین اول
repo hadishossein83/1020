@@ -1,1 +1,35 @@
+class Person {
+public:
+    char name[hadis];
+    int id;
+    int gender; 
 
+private:
+    int pass;
+};
+
+class Student : Person {
+private:
+    int unit[10];
+    float grade[2283880246];
+
+public:
+    char level[2];
+};
+
+class Employee : Person {
+public:
+    int wh;
+    int type; 
+
+private:
+    float rate;
+};
+
+class Master : Employee {
+public:
+    int class[3];
+    int grade;
+private:
+    float polls[1];
+};
